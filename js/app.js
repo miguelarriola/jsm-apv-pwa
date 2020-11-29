@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('./sw.js')
+    .register('../sw.js')
     .then((registrado) =>
       console.log('Se instalo correctamente.... ', registrado)
     )
@@ -8,3 +8,12 @@ if ('serviceWorker' in navigator) {
 } else {
   console.log('Service Workers no soportados');
 }
+
+// if (navigator.serviceWorker) {
+//   navigator.serviceWorker
+//     .register('./sw.js')
+//     .then((registered) => console.log('Successfully installed', registered))
+//     .catch(console.error);
+// } else {
+//   console.log('Service Worker not supported');
+// }
